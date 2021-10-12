@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --leaves: #8d8741;
+    --sky: #659DBD;
+    --sand: #DAAD86;
+    --wood: #BC986A;
+    --cream: #FBEEC1;
+    --cloud: white;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;   
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--sky);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999; 
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--cloud);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 a {
+    padding: 10px 20px;
+    background: var(--sky);
+    border-radius: 25px;
+    border: 8px solid var(--cloud);
+}
+
+header nav {
+    margin: 30px 30px 15px 30px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-size: 2vw;
+    font-weight: bold;
+    background: var(--cloud);
+    color: var(--sky);
+    border-radius: 15px;
+}
+
+header nav ul li a:hover {
+    border: 3px solid var(--cloud);
+    background: var(--sky);
+    color: var(--cloud);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+footer {
+    background: var(--sky);
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: var(--cloud);
+    font-size: 2vw;
+    margin: 0;
+    border-bottom: none;
+}
+
+section {
+    color: var(--sky);
+    border: 60px solid var(--sky);
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section h2 {
+    margin: 50px auto;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid;
+    width: 50%;
+    border-color: var(--sky);
+    font-style: italic;
+    font-size: 35px;
+}
+
+.about-me {
+    padding: 80px;
+    background-image: url("../images/img1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+.about {
+    background-color: var(--cloud);
+}
+
+.about-me img{
+    padding: 0 20px 30px 0;
+    width: 35%;
+    float: left;
+}
+
+.about-me p{
+    padding: 35px;
+    width: 65%;
+}
+
+.mywork {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.mywork a {
+    padding: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+    color: var(--sky);
+    border-radius: 15px;
+    background: var(--cloud);
+}
+
+.mywork a:hover {
+    background: var(--sky);
+    color: var(--cloud);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+.work-one {
+    margin: 10px;
+    padding: 200px;
+    background-image: url("../images/runbuddy.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    flex: 1 2 0;
+}
+
+.work-two {
+    margin: 10px;
+    padding: 200px 50px;
+    background-image: url("../images/img2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    flex: 1 2 0;
+}
+
+.work-three {
+    margin: 10px;
+    padding: 200px 50px;
+    background-image: url("../images/img3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    flex: 1 2 0;
+}
+
+.work-one:hover, .work-two:hover, .work-three:hover {
+    opacity: 0.8;
+}
+
+.contact div div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.contact a {
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: none;
+    color: var(--sky);
+}
+
+.contact a:hover {
+    background: var(--sky);
+    color: var(--cloud);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+@media screen and (max-width: 980px) {
+    header {
+        position: static;
+    }
+
+    header nav ul li {
+        margin: 5px 20px 20px 0;
+        justify-content: center;
+    }
+
+    header nav ul li a, .mywork a {
+        font-size: 18px;
+    }
+    
+    footer h2 {
+        font-size: 18px;
+    }
+
+}
+  
+ 
+  @media screen and (max-width: 768px) {
+
+
+  }
+  
+  @media screen and (max-width: 575px) {
+
+    .about-me {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-me img{ 
+        margin-left: 20px;   
+        width: 100%;
+    }
+    
+    .about-me p{
+        width: 100%;
+    }
+
+    .work-one {
+        padding: 20px;
+    }
+
+    .work-two, .work-three {
+        padding: 10px;
+    }
+
+    .mywork a {
+        padding: 10px;
+    }
+  }
