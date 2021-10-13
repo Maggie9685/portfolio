@@ -3,11 +3,11 @@
 This is a website to introduce myself and showcast my work. It has the about, work, and contact sections. This website should work on any screen size. In the work section, I have one working link and block, two non-working links and blocks to demonstrate when there is more than one project shown in the work section. Since I don't like the look of having empty spaces after the last element, I make sure the last element will scale and resize to fill out the empty space. In the most case, the first project list in the work section has a bigger size than the rest. It should look like the following pictures.
 
 #### When last item fill out the remaining space on the row:
-![Screenshot](assets/images/screenshot2.jpg)
+![Screenshot](assets/images/screenshot2.JPG)
 
 
 #### In most cases:
-![Screenshot](assets/images/screenshot.jpg)
+![Screenshot](assets/images/screenshot.JPG)
 
 
 ## Built With
